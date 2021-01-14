@@ -4,6 +4,11 @@ kind: Kustomization
 bases:
 - ../../base
 
+patchesStrategicMerge:
+- patch.yaml
+
+namePrefix: moshe-
+
 
 images:
 - name: gcr.io/dev-gke-301312/env-service
